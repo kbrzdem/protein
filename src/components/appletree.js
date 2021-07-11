@@ -4,7 +4,6 @@ const Apple = () => {
   const [click, setClick] = useState(false);
   const [isClass, setClass] = useState(false);
   const [isBasket, setBasket] = useState(false);
-
   //const random = Math.floor(Math.random() * 3) + 1;
   const toggleClass = () => {
     setClick(!click);
