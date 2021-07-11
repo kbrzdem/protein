@@ -1,0 +1,128 @@
+.tree-area {
+  margin: 0 auto;
+  padding-left: 20px;
+  position: relative;
+
+  &__apple {
+    position: absolute;
+
+    left: 120px;
+    top: 100px;
+  }
+  &__apple-one {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+  }
+  &__apple-two {
+    position: absolute;
+    left: 320px;
+    top: 100px;
+  }
+  &__apple-three {
+    position: absolute;
+    left: 170px;
+    top: 180px;
+  }
+  &__apple-four {
+    position: absolute;
+    left: 280px;
+    top: 180px;
+  }
+  &__btn {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(44, 26, 26);
+    font-size: 18px;
+    padding: 5px 20px;
+    position: relative;
+    bottom: 150px;
+    left: 400px;
+    margin: 18px;
+    &:hover {
+      cursor: pointer;
+      color: green;
+      border: 1px solid grey;
+    }
+  }
+  &__basket {
+    margin-left: 350px;
+  }
+}
+
+.disabled {
+  position: fixed;
+  width: 12%;
+  left: 150px;
+  &-one {
+    left: 190px;
+  }
+  &-two {
+    left: 230px;
+  }
+  &-three {
+    left: 270px;
+  }
+  &-four {
+    left: 310px;
+  }
+}
+.basket {
+  position: fixed;
+  width: 12%;
+  left: 532px;
+  z-index: -1;
+  &-one {
+    left: 542px;
+    z-index: -1;
+  }
+  &-two {
+    left: 552px;
+    z-index: -1;
+  }
+  &-three {
+    left: 562px;
+    z-index: -1;
+  }
+  &-four {
+    left: 570px;
+    z-index: -1;
+  }
+}
+
+.shake {
+  animation: shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+figure {
+  margin: 0;
+}
+.button {
+  display: flex;
+}
